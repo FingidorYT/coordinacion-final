@@ -1,0 +1,55 @@
+/* Estilos generales */
+body{
+    font-family: roboto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+}
+
+/* Estilos Header */
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    border-bottom: 2vh solid rgb(103,28,52);
+    margin-bottom: 2vw;
+}
+
+.mintrabajo {
+    height: 10vh;
+}
+
+.logosena {
+    height: 12vh;
+}
+
+/* Estilos Navbar */
+.opcion{
+    font-weight: bold;
+    font-size: 1.2vw;
+    font-family: roboto;
+    color: rgb(255, 255, 255);
+    background-color: rgb(103,28,52);
+    border: solid rgb(103,28,52);
+    border-width: 0.1vw 0.1vw 0 0.1vw;
+    width: 8vw;
+    height: 4vh;
+    border-radius: 1vw 1vw 0 0;
+    transition: all 0.8s;
+}
+
+.opcion:hover {
+    background-color: rgba(103, 28, 52, 0.4);
+    border: solid rgba(103, 28, 52, 0.4);
+}
+
+.salir:hover {
+
+    background-color: rgb(103,28,52);
+    color: rgb(255, 0, 0);
+}
