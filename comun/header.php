@@ -1,5 +1,6 @@
 <div class="head">
-        <img class="mintrabajo" src="/coordinacion/img/mintrabajo-logo.png">
+        <?php echo "--".getenv("RUTA_PROYECTO");?>
+        <img class="mintrabajo" src="/<?php getenv("RUTA_PROYECTO");?>/img/mintrabajo-logo.png">
         <img class="logosena" src="/coordinacion/img/logosena.png">
 </div>
 <a href="logout.php" class="salir_2"><button class="opcion salir" id="logout" >Logout</button></a>

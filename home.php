@@ -34,7 +34,7 @@ if($resultado = $conn -> query($sql)){
     <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-
+<?php echo "--".getenv("RUTA_PROYECTO");?>
     <?php
     // At top:
     require('comun/header.php'); 
