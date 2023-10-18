@@ -29,6 +29,13 @@ body{
 }
 
 /* Estilos Navbar */
+.menu {
+    display: grid;
+    justify-content: space-between;
+    width: 50%;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
 .opcion{
     font-weight: bold;
     font-size: 1.2vw;
@@ -46,6 +53,16 @@ body{
 .opcion:hover {
     background-color: rgba(103, 28, 52, 0.4);
     border: solid rgba(103, 28, 52, 0.4);
+}
+
+.salir_2 {
+    margin-left: 90%;
+
+}
+
+#logout {
+    border-radius: 1vw;
+
 }
 
 .salir:hover {

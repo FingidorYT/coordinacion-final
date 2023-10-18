@@ -40,6 +40,7 @@ if($resultado = $conn -> query($sql)){
     require('comun/header.php'); 
     ?>
 
+
     <?php
     // At top:
     require('comun/navbar.php'); 
@@ -129,8 +130,8 @@ if($resultado = $conn -> query($sql)){
                     ?>
                 </select>
                 </span>
-                <span><input type="text" placeholder="Ingresa el motivo" name="otro" id="otro"/>otro motivo</span>
-                <span><input type="number" placeholder="Horas del permiso" name="nhoras" id="nhoras"/>Horas</span>
+                <span id="otro-2">Otro:<input type="text" placeholder="Ingresa el motivo" name="otro" id="otro"/></span>
+                <span><input type="number" placeholder="Horas del permiso" name="nhoras" id="nhoras" min="1"/>Horas</span>
             </div>
 
             <div class="modal-footer">

@@ -97,9 +97,12 @@ $(document).ready(function() {
     });
 
     $("#mybtn").click(function(){
+        if ($("#documento").val() == 0) {
+            alert("Ingrese Documento Valido");
+        } else {
         var modal = $("#myModal");
         $(modal).css("display", "block");
-    });
+    }});
 
     $("#limpiar").click(function(){
         window.location.href="home.php";
@@ -108,6 +111,16 @@ $(document).ready(function() {
     $("span.close").click(function(){
         var modal = $("#myModal");
         $(modal).css("display", "none");
+    });
+
+    $("#motivo").click(function(){
+        if ($("#motivo option:selected").text() == "Otros") {
+            var spanotro = $("#otro-2");
+            $(spanotro).css("display", "flex");
+        } else {
+            var spanotro = $("#otro-2");
+            $(spanotro).css("display", "none");
+        }
     });
 
     $("#btnguardar").click(function(){

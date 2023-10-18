@@ -1,8 +1,10 @@
+/*Color pagina actual*/
 #op4 {
     background-color: rgba(103, 28, 52, 0.6);
     border: solid rgba(103, 28, 52, 0.4);;
     
 }
+
 
 .busqueda{
     height: 80%;
@@ -16,12 +18,6 @@
     padding: 0 2vw 3vw 2vw;
 }
 
-.menu {
-    display: grid;
-    justify-content: space-between;
-    width: 50%;
-    grid-template-columns: auto auto auto auto auto;
-}
 
 .titulo {
     color: rgb(103,28,52);
@@ -197,6 +193,12 @@ table th {
     justify-content: center;
     font-size: 1.5vw;
 }
+
+#otro-2 {
+    display: none;
+}
+
+
   
   .modal-footer {
     padding: 0.5vw;
