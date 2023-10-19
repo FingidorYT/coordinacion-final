@@ -33,7 +33,7 @@ body{
     display: grid;
     justify-content: space-between;
     width: 50%;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
 }
 
 .opcion{
