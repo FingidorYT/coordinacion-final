@@ -1,0 +1,41 @@
+
+.contenedor{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    border-radius: 2vw;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 1vw 1vw 2vw 1vw rgba(0, 0, 0, 0.5);
+    padding: 0 2vw 3vw 2vw; 
+}
+
+input{
+    border-radius: 1vw;
+    font-size: 1.5vw;
+    
+}
+
+.inputhola{
+    margin: 1vw 0vw;
+    justify-content: space-between;
+    display: flex;
+    width: 28vw;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+button{
+    background-color: rgb(103,28,52);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2vw;
+    border-radius: 0.5vw;
+    border: none;
+    padding: 0.5vw;
+    margin-left: 1vw; 
+}
