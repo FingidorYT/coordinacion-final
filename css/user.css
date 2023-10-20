@@ -1,0 +1,14 @@
+#btn-editar, #btn-eliminar{
+    color : white;
+}
+#tabla>thead{
+    background-color:rgb(103,28,52);
+    color : white;
+}
+#tabla>tbody{
+    background-color:#f3f3f3;
+} 
+h1{
+    font-weight:bold;
+    color:rgb(103,28,52);
+}
