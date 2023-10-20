@@ -1,9 +1,8 @@
-<?php
-$env = parse_ini_file(dirname(__DIR__, 1).'/'.'.env');
-?>
-
 <div class="head">
-        <img class="mintrabajo" src="/<?php echo $env['RUTA_PROYECTO'];?>/img/mintrabajo-logo.png">
-        <img class="logosena" src="/<?php echo $env['RUTA_PROYECTO'];?>/img/logosena.png">
+        <img class="mintrabajo" src="<?php echo $_SESSION['RUTA'];?>/img/mintrabajo-logo.png">
+        <img class="logosena" src="<?php echo $_SESSION['RUTA'];?>/img/logosena.png">
 </div>
-<a href="/coordinacion-final/logout.php" class="salir_2"><button class="opcion salir" id="logout" >Logout</button></a>
+
+<!--Cambiar la ruta del logout php segun donde se eencuentra actualmente-->
+<a href="../logout.php" class="salir_2"><button class="opcion salir" id="logout" >Logout</button></a>
+
