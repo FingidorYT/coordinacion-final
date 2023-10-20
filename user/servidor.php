@@ -25,12 +25,12 @@ $email != null && $userID!=null){
         $sql = "UPDATE USERS SET username='$username', email='$email', nombre='$nombre' WHERE id=$userID";
     }
     
-    if ($conexion->query($sql) === TRUE) {
+    if ($conn->query($sql) === TRUE) {
         echo "Usuario actualizado correctamente.";
         header("Location: index.php");
         exit();
     } else {
-        echo "Error al actualizar usuario: " . $conexion->error;
+        echo "Error al actualizar usuario: " . $conn->error;
     }
 }
 
