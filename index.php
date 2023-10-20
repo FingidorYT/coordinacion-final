@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+$env = parse_ini_file('.env');
+if (isset($env['RUTA_PROYECTO']) && !isset($_SESSION['RUTA'])) {
+    $_SESSION["RUTA"]=$env['RUTA_PROYECTO'];
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
