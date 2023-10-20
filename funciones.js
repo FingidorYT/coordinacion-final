@@ -74,7 +74,7 @@ $(document).ready(function() {
     $("#btnbuscar").click(function(){
         var documento = $("#documento").val();
         $.ajax({
-            url: "http://localhost/coordinacion/busqueda.php",
+            url: "http://localhost/coordinacion-final/busqueda.php",
             type: "POST",
             dataType: "json",
             data: {

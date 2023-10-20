@@ -1,0 +1,100 @@
+/*Color pagina actual*/
+#op4 {
+    background-color: rgba(103, 28, 52, 0.6);
+    border: solid rgba(103, 28, 52, 0.4);;
+    
+}
+
+
+.busqueda{
+    height: 50%;
+    width: 60%;
+    display: flex;
+    border-radius: 2vw;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 1vw 1vw 2vw 1vw rgba(0, 0, 0, 0.5);
+    padding: 0 2vw 3vw 2vw;
+}
+
+.titulo {
+    color: rgb(103,28,52);
+    font-size: 3vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 0.5vw solid rgb(103,28,52);
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    margin: 0.5vw 0vw 2vw 0vw;
+    font-family: roboto;
+}
+
+.documento {
+    font-size: 1vw;
+}
+
+.id-img {
+    height: 2vw;
+}
+
+.busqueda .btn {
+    background-color: rgb(103,28,52);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2vw;
+    border-radius: 0.5vw;
+    border: none;
+}
+
+.title-info {
+    margin: 0;
+    margin-bottom: 1vw;
+    padding: 0;
+    font-size: 1.8vw;
+}
+
+.encabezado {
+    width: 100%;
+}
+
+.tabla{
+    column-gap: 1vw;
+    border-collapse: collapse;
+    text-align: center;
+    align-items: center;
+    border: black;
+    width: 100%;
+    font-size: 1.1vw;
+    height: fit-content;
+    
+}
+
+table th {
+    font-weight: normal;
+    background-color: rgb(103, 28, 52);
+    color: white;
+    padding: 0.5vw;
+    border: 1px solid black; /* Aplicar el borde a las celdas del encabezado de columna */
+}
+
+table tr {
+    font-weight: normal;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 0.5vw;
+    border: 1px solid black; /* Aplicar el borde a las celdas de datos */
+}
+
+table td {
+    font-weight: normal;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 0.5vw;
+    border: 1px solid black; /* Aplicar el borde a las celdas de datos */
+}
+
+
