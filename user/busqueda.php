@@ -3,13 +3,16 @@
     $campo = $_POST["barra-busqueda"];
     $result = null;
     if ($campo!=null) {
-        $sql="SELECT * FROM users WHERE id = ".$campo;
+        $sql="SELECT * FROM users WHERE username = '".$campo. "'";
         $result = mysqli_query($conn, $sql);
     } else {
         echo "Campo vacio o no existen usuario";
         return;
     }
     
+    if (!$result) {
+        die("Error en la consulta: " . mysqli_error($conexion));
+    }
 ?>
 
 
@@ -46,14 +49,14 @@
             
         <button class="btn btn-success" id="btn-agregar" onclick="location.href='./create.php'">Agregar</button>
         <form action="busqueda.php" class="d-flex pb-3" role="search" method="post" id="busqueda">            
-            <input id="barra-busqueda" class="form-control me-2" name="barra-busqueda" type="search" placeholder="Buscar Usuario por id" aria-label="Search">
+            <input id="barra-busqueda" class="form-control me-2" name="barra-busqueda" type="search" placeholder="Buscar Usuario por username" aria-label="Search">
             <button id="btn-buscar" type="submit"><a>Buscar</a></button>
             <button id="btn-buscar" type="button"><a href="index.php">Limpiar busqueda</a></button>
         </form>
         <table class="table" id="tabla">
             <thead class="">
                 <tr>
-                    <th>ID</th>
+                    <th>Username</th>
                     <th>Nombre</th>
                     <th>Email</th>
                     <th>Acciones</th>
@@ -62,7 +65,7 @@
             <tbody>
                 <?php if ($row = mysqli_fetch_assoc($result)) { ?>
                     <tr>
-                        <td><?php echo $row["id"]; ?></td>
+                        <td><?php echo $row["username"]; ?></td>
                         <td><?php echo $row["nombre"]; ?></td>
                         <td><?php echo $row["email"]; ?></td>
                         <td>

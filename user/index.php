@@ -46,13 +46,13 @@ $result = mysqli_query($conn, $sql);
         <button class="btn btn-success" id="btn-agregar" onclick="location.href='./create.php'">Agregar</button>
         <form action="busqueda.php" class="d-flex pb-3" role="search" method="post" id="busqueda">
             
-            <input id="barra-busqueda" class="form-control me-2" name="barra-busqueda" type="search" placeholder="Buscar Usuario por id" aria-label="Search">
+            <input id="barra-busqueda" class="form-control me-2" name="barra-busqueda" type="search" placeholder="Buscar Usuario por username" aria-label="Search">
             <button id="btn-buscar" type="submit"><a>Buscar</a></button>
         </form>
         <table class="table" id="tabla">
             <thead class="">
                 <tr>
-                    <th>ID</th>
+                    <th>Username</th>
                     <th>Nombre</th>
                     <th>Email</th>
                     <th>Acciones</th>
@@ -61,7 +61,7 @@ $result = mysqli_query($conn, $sql);
             <tbody>
                 <?php while ($row = mysqli_fetch_assoc($result)) { ?>
                     <tr>
-                        <td><?php echo $row["id"]; ?></td>
+                        <td><?php echo $row["username"]; ?></td>
                         <td><?php echo $row["nombre"]; ?></td>
                         <td><?php echo $row["email"]; ?></td>
                         <td>
