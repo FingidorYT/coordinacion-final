@@ -2,6 +2,12 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+#op2 {
+    background-color: rgba(103, 28, 52, 0.6);
+    border: solid rgba(103, 28, 52, 0.4);;
+    
+}
+
 .cajita {
     height: 80%;
     width: 50%;
@@ -39,7 +45,7 @@ table{
     text-align: center;
     align-items: center;
     border: black;
-    width: 100%;
+    width: 700px;
     font-size: 1.1vw;
     height: fit-content;
     margin-top: 4%;

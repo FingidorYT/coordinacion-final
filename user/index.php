@@ -6,10 +6,21 @@ if (!$conn) {
     die("La conexión a la base de datos ha fallado: " . mysqli_connect_error());
 }*/
 
+session_start();
+
+$id_user = $_SESSION['id_user'];
+
+if (!$id_user) {
+    header('Location: index.php');
+    return;
+}
+
 include("conexion.php");
 
 $sql = "SELECT * FROM users";
 $result = mysqli_query($conn, $sql);
+
+
 
 ?>
 
@@ -38,11 +49,9 @@ $result = mysqli_query($conn, $sql);
     require('../comun/navbar.php'); 
     ?>
 
-<div class="container mt-4">
 <div class="busqueda">
-        <p class="titulo">
-            <h1>GESTION DE USUARIOS</h1>
-        </p>
+    <div class="container mt-4">
+        <p class="titulo"> GESTION DE USUARIOS</p>
         <button class="btn btn-success" id="btn-agregar" onclick="location.href='./create.php'">Agregar</button>
         <form action="busqueda.php" class="d-flex pb-3" role="search" method="post" id="busqueda">
             
@@ -72,6 +81,7 @@ $result = mysqli_query($conn, $sql);
                 <?php } ?>
             </tbody>
         </table>
+    </div>
 </div>
         
 </div>

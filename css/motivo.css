@@ -2,7 +2,12 @@
     background-color:  rgb(103,28,52);
   
 
-}   
+}
+#op3 {
+    background-color: rgba(103, 28, 52, 0.6);
+    border: solid rgba(103, 28, 52, 0.4);;
+    
+}
 
 .busqueda{
     height: 80%;

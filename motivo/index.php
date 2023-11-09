@@ -20,7 +20,7 @@ if (!$id_user) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0-beta3/css/all.min.css">
     <?php include('links.php'); ?>
     <?php include ('../scripts.php');?>
-    <link rel="stylesheet" href="estiss.css">
+    <link rel="stylesheet" href="../css/motivo.css">
 
 </head>
 <body>
@@ -42,7 +42,7 @@ if (!$id_user) {
 
 
       <div class="container p-5" id="divPr">
-      <h1>Lista de motivos</h1>
+      <p class="titulo">Lista de motivos</p>
 
      <table class="table table-striped">
         <thead>
@@ -230,7 +230,7 @@ if (!$id_user) {
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         </p>
-     </div>
+    </div>
      <br>
      <br>
     

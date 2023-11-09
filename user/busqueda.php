@@ -1,9 +1,19 @@
 <?php
+session_start();
+
+$id_user = $_SESSION['id_user'];
+
+if (!$id_user) {
+    header('Location: index.php');
+    return;
+}
+
+
     include('conexion.php');
     $campo = $_POST["barra-busqueda"];
     $result = null;
     if ($campo!=null) {
-        $sql="SELECT * FROM users WHERE username = '".$campo. "'";
+        $sql="SELECT * FROM users WHERE username like '%".$campo."%'";
         $result = mysqli_query($conn, $sql);
     } else {
         echo "Campo vacio o no existen usuario";
@@ -41,10 +51,11 @@
     require('../comun/navbar.php'); 
     ?>
 
-<div class="container mt-4">
 <div class="busqueda">
+    <div class="container mt-4">
+
         <p class="titulo">
-            <h1>GESTION DE USUARIOS</h1>
+            GESTION DE USUARIOS
         </p>
             
         <button class="btn btn-success" id="btn-agregar" onclick="location.href='./create.php'">Agregar</button>

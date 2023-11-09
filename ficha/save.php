@@ -10,15 +10,20 @@ if (isset($_POST['guardar'])) {
     }
 
     $sql = "INSERT INTO fichas (`id`, `numero`, `programa`, `lider`) VALUES (NULL,$numero,'$programa','$lider')";
-    echo $sql;
 
     if ($conn->query($sql) === TRUE) {
-        echo "Los datos se cargaron correctamente.";
+        $mensaje["msg"]="Se ha guardado correctamente";
+        $mensaje["estado"]="OK";
+        header('Location: index.php');
+        echo json_encode($mensaje);
     } else {
-        echo "Error al cargar: " . $conn->error;
-    }
-
-    $conn->close();
-    echo '<a href="index.php"><button>Volver a la página de inicio</button></a>';
+        $mensaje["msg"]="No se ha guardado correctamente";
+        $mensaje["estado"]="Error";
+        header('Location: index.php');
+        echo json_encode($mensaje);    }
+}else{
+$mensaje["msg"]=$msg;
+$mensaje["estado"]=$estado;
+echo json_encode($mensaje);
 }
 ?>

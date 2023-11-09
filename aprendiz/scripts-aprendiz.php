@@ -5,4 +5,4 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="funcion.js"></script>
     <link rel="stylesheet" href="../css/comun.css">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/aprendiz.css">
