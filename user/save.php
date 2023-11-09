@@ -29,7 +29,9 @@
     if ($contrasena != $repetir_contrasena) {
         $mensaje['msj'] = "Contraseñas diferentes";
         $mensaje['estado'] = "Error";
-        echo json_encode($mensaje);
+        //header('Location: index.php');
+        //echo json_encode($mensaje);
+        echo "<script> history.back();alert('".$mensaje['msj']."');</script>";
         return;
     }
 

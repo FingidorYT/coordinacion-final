@@ -1,3 +1,16 @@
+<?php
+
+session_start();
+
+$id_user = $_SESSION['id_user'];
+
+if (!$id_user) {
+    header('Location: index.php');
+    return;
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +29,8 @@
     // At top:
     require('../comun/header.php'); 
     ?>
+
+<div class="busqueda">
 <div class="container">
     <h1 class="mt-4">Crear Usuario</h1>
     <form class="mt-4" action="save.php" method="post">
@@ -43,6 +58,7 @@
         <a href="javascript:history.go(-1);" class="btn btn-secondary">Volver</a>
 
     </form>
+</div>
 </div>
     <script src="./js/jquery-3.7.1.min.js"></script>
 </body>

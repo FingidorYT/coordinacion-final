@@ -78,7 +78,7 @@ if (!$id_user) {
             }
             
             $conn->close();
-        }
+        }else {
         ?>
 
         <div id="fichas">
@@ -125,6 +125,7 @@ if (!$id_user) {
                 ?>
             </table>
         </div>
+    <?php } ?>
     </div>
 
     

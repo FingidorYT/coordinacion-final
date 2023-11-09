@@ -13,12 +13,14 @@
         $sql = "UPDATE fichas SET numero = '$numero', programa = '$programa', lider = '$lider' WHERE id = $id";
 
         if ($conn->query($sql) === TRUE) {
-            echo "Los datos se actualizaron correctamente.";
+            $mensaje["msg"]="Se ha guardado correctamente";
+            $mensaje["estado"]="OK";
+            header('Location: index.php');
+            echo json_encode($mensaje);
         } else {
             echo "Error al actualizar: " . $conn->error;
         }
 
-        $conn->close();
-        echo '<a href="index.php"><button>Volver a la página de inicio</button></a>';
+        
     }
 ?>

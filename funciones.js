@@ -139,7 +139,7 @@ $(document).ready(function() {
         var userid = $("#user_id").val();
 
         $.ajax({
-            url: "http://localhost/coordinacion/guardar.php",
+            url: "http://localhost/coordinacion-final/guardar.php",
             type: "POST",
             dataType: "json",
             data: {
